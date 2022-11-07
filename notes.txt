@@ -176,4 +176,11 @@ Functions
     variadic functions
     anonymous functions
     higher order functions (functions are first class objects)
-        1. 
+        1. assign a function as a value to a variable
+        2. pass a function as an argument to another function
+        3. return a function as a return value from another function
+
+
+Assignment-03:
+    Refactor the solution for assignment-02 using functions
+        NOTE: make sure that each function follows SRP (Single Responsibility Principle)
