@@ -170,3 +170,7 @@ Assignment-2:
 	If the user choice is NOT 1 - 5
 		print "Invalid choice"
 		display the menu again
+
+
+Functions
+    variadic functions
