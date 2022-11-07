@@ -1,0 +1,66 @@
+Magesh Kuppan
+https://in.linkedin.com/in/tkmagesh
+
+Schedule:
+    Commence    : 9:30 AM
+    Tea Break   : 11:00 AM (20 mins)
+    Lunch Break : 1:00 PM (1 hr)
+    Tea Break   : 3:30 PM (20 mins)
+    Wind up     : 5:30 PM
+
+Methodology:
+    * No powerpoints
+    * 100% hands-on driven class
+    * At least 50% of the class should have solved the assignments for us to continue
+    * Be prepared to showcase your assignment solution
+
+Github Repo:
+    https://github.com/tkmagesh/IBM-Go-Nov-2022
+
+Etiquitte:
+    * No allocated time for Q&A
+    * Interuptions are most welcome
+    * Inform if you leave the class for any reason
+
+About You:
+    Name
+    Experience
+    Primary Skillset
+    Experience in Golang (if any)
+
+Why Go?
+    1. Simplicity
+    2. Resource light
+    3. Error Handling
+    4. Concurrency
+
+    1. Simplicity
+        Only 25 keywords
+        * No access modifiers (No public, private, protected etc)
+        * No Classes (only structs)
+        * No inheritance (only composition)
+        * No Exceptions (only errors [values])
+        * No "try catch finally"
+        * No reference types (everything is a value in go)
+        * No pointer arithmetic
+        * No implicit type conversion
+        * Has a builtin Garbage Collector
+
+    2. Light Weight
+        - Compiles to Native Code
+        - No need for app servers
+        - Performance on par with C++
+
+    3. Concurrency
+        - Goroutine (4 KB) / OS Thread (2 MB on linux)
+            1000s of goroutines using fewer OS thread(s)
+        - Has a builtin Scheduler to schedule the goroutines
+        - Concurrency features are built in the language
+            "go" keyword, "chan" data type, "range" & "select case" constructs
+        - SDK support
+            sync package
+            sync/atomic package
+
+
+
+Paradox of Choice (Barry Schwartz)
