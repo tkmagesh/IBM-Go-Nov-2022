@@ -134,6 +134,7 @@ func main() {
 	fmt.Println("imaginary : ", imag(c1c2))
 
 	//constants
+	// convention - ALL UPPER CASE
 	//const pi float32 = 3.14
 	const pi = 3.14
 	//fmt.Println("pi :", pi)

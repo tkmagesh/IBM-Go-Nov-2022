@@ -139,3 +139,9 @@ Data types
 
     byte (alias for uint8)
     rune (alias for int32) (unicode code point)
+
+Constructs
+    if else
+    switch case
+    for 
+    func (function)
