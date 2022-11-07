@@ -174,3 +174,4 @@ Assignment-2:
 
 Functions
     variadic functions
+    anonymous functions
