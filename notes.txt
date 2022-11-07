@@ -61,6 +61,55 @@ Why Go?
             sync package
             sync/atomic package
 
-
-
 Paradox of Choice (Barry Schwartz)
+
+Software Requirements
+    Go tools 
+        (https://go.dev/dl)
+        Verification : go version
+
+    Visual Studio Code 
+        (https://code.visualstudio.com)
+
+    Go extension for Visual Studio Code 
+        (https://marketplace.visualstudio.com/items?itemName=golang.Go)
+        
+    Configure the Go extension tools In Visual Studio Code
+        Ctrl/Cmd + Shift + P
+        Go: Install/Update Tools
+        Select all the checkboxes and press OK
+
+
+    Documentation for GO Standard Library
+        https://pkg.go.dev/std
+
+    To run a go program
+        go run <program.go>
+
+    To create a build
+        go build <program.go>
+        go build -o <buildname> <program.go>    
+
+    To execute the build 
+        In mac -> ./<buildname>
+        IN windows -> <buildname> 
+
+    To list all the environment variables
+        go env
+
+    To get the value of the given environment variables
+        go env <env_variable>
+        go env <env_variable-1> <env_variable-2>
+
+    To change the environment variables
+        go env -w <env_variable-1>=<value_1> <env_variable-2>=<value_2>
+
+    Envrionment Variables for Cross Compilation
+        GOOS & GOARCH
+    
+    To get the list of platforms for cross compilation
+        go tool dist list 
+            (will list the possible combination of GOOS/GOARCH)
+    
+    On Mac & Linux
+        GOOS=windows GOARCH=386 go build <program.go>
