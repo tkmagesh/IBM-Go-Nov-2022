@@ -114,4 +114,102 @@ func main() {
 	x, y, str := 100, 200, "Sum of 100 & 200 is :"
 	result := x + y
 	fmt.Println(str, result)
+
+	//type conversion (NOTE : Use the type name like a function)
+	var i int = 100
+	var f float32 = float32(i)
+	fmt.Println(f)
+
+	//complex numbers
+	//var c1 complex64 = 4 + 5i
+	//var c1 = 4 + 5i
+	c1 := 4 + 5i
+	fmt.Println(c1)
+	var c2 = 7 + 3i
+	c1c2 := c1 + c2
+	fmt.Println(c1c2)
+
+	//accessing the real & imaginary parts of the complex number
+	fmt.Println("real : ", real(c1c2))
+	fmt.Println("imaginary : ", imag(c1c2))
+
+	//constants
+	//const pi float32 = 3.14
+	const pi = 3.14
+	//fmt.Println("pi :", pi)
+
+	//iota
+
+	/*
+		const red int = 0
+		const green int = 1
+		const blue int = 2
+	*/
+	/*
+		const (
+			red   int = 0
+			green int = 1
+			blue  int = 2
+		)
+	*/
+	/*
+		const (
+			red   int = iota
+			green int = iota
+			blue  int = iota
+		)
+	*/
+
+	/*
+		const (
+			red int = iota
+			green
+			blue
+		)
+	*/
+
+	/*
+		const (
+			red = iota
+			green
+			blue
+		)
+	*/
+
+	/*
+		const (
+			red = iota + 2
+			green
+			blue
+		)
+	*/
+
+	/*
+		const (
+			red = iota * 2
+			green
+			blue
+		)
+	*/
+
+	const (
+		red = iota * 2
+		green
+		_
+		blue
+	)
+	fmt.Printf("red = %d, green = %d, blue = %d\n", red, green, blue)
+
+	//IOTA Usage:
+	const (
+		VERBOSE = 1 << iota
+		CONFIG_FROM_DISK
+		DATABASE_REQUIRED
+		LOGGER_ACTIVATED
+		DEBUG
+		FLOAT_SUPPORT
+		RECOVERY_MODE
+		REBOOT_ON_FAILURE
+	)
+	fmt.Printf("%b, %b, %b, %b, %b, %b, %b, %b\n", VERBOSE, CONFIG_FROM_DISK, DATABASE_REQUIRED, LOGGER_ACTIVATED, DEBUG, FLOAT_SUPPORT, RECOVERY_MODE, REBOOT_ON_FAILURE)
 }
