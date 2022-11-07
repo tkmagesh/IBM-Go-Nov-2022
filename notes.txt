@@ -175,3 +175,5 @@ Assignment-2:
 Functions
     variadic functions
     anonymous functions
+    higher order functions (functions are first class objects)
+        1. 
