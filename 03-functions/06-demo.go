@@ -32,9 +32,10 @@ func main() {
 	logOperation(subtract, 100, 200)
 }
 
-func logOperation(oper func(int, int), n1, n2 int) {
+func logOperation(oper func(int, int) int, n1, n2 int) {
 	log.Println("Operation started")
-	oper(n1, n2)
+	result := oper(n1, n2)
+	fmt.Println("Result :", result)
 	log.Println("Operation completed")
 }
 
@@ -50,12 +51,14 @@ func logSubtract(n1, n2 int) {
 	log.Println("Operation completed")
 }
 
-func add(n1, n2 int) {
+func add(n1, n2 int) int {
 	result := n1 + n2
-	fmt.Println("Result :", result)
+	//fmt.Println("Result :", result)
+	return result
 }
 
-func subtract(n1, n2 int) {
+func subtract(n1, n2 int) int {
 	result := n1 - n2
-	fmt.Println("Result :", result)
+	//fmt.Println("Result :", result)
+	return result
 }
