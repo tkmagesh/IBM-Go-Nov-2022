@@ -21,6 +21,20 @@ func main() {
 	}
 
 	x := [3]int{10, 20, 30}
-	y := [3]int{10, 20, 30}
-	fmt.Println(x == y)
+	y := x
+	x[0] = 100
+	fmt.Println(x, y)
+
+	sort(&nos)
+	fmt.Println(nos)
+}
+
+func sort(nos *[5]int) {
+	for i := 0; i < 4; i++ {
+		for j := i + 1; j < 5; j++ {
+			if nos[i] > nos[j] {
+				nos[i], nos[j] = nos[j], nos[i]
+			}
+		}
+	}
 }
