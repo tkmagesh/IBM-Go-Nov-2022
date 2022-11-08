@@ -184,3 +184,10 @@ Functions
 Assignment-03:
     Refactor the solution for assignment-02 using functions
         NOTE: make sure that each function follows SRP (Single Responsibility Principle)
+
+Collections
+    Array
+        Fixed size collection of data of the same type
+        
+    Slice
+    Map
