@@ -4,17 +4,19 @@ package main
 
 import "fmt"
 
-var counter int
-
 func main() {
+	increment := getIncrement()
 	fmt.Println(increment())
 	fmt.Println(increment())
-	counter = 1000
+	//counter = 1000
 	fmt.Println(increment())
 	fmt.Println(increment())
 }
 
-func increment() int {
-	counter++
-	return counter
+func getIncrement() func() int {
+	var counter int
+	return func() int {
+		counter++
+		return counter
+	}
 }
