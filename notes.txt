@@ -195,3 +195,39 @@ Collections
 
     Map
         collection of key-value pairs
+
+Modularity
+    Before Go 1.13:
+        GOPATH
+            /bin
+                contains all the binaries of the go command line tools
+            /pkg
+                code of the 3rd packages
+            /src
+                /github.com
+                    /tkmagesh
+                        /my-app
+                            import "github.com/tkmagesh/pkg-1"
+                            app.go
+                        /pkg-1
+                            code.go
+                        /pkg-2
+                            code.go
+
+    In Go 1.13 Modules were introduced
+    go.mod
+        name of the module
+            ADVISABE to have the complete repo path as the module name
+
+        minimum go version
+        3rd party depedencies
+
+    To create a module
+        go mod init <module_name>
+
+    To execute a module
+        go mod .
+
+    To create a build of a module
+        go build .
+        go build -o <binary_name> .
