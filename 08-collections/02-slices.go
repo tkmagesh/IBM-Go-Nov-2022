@@ -26,7 +26,7 @@ func main() {
 	fmt.Println(nos)
 	//nos = append(nos, 70, 80)
 	vals := []int{70, 80, 90}
-	nos = append(nos, vals...)
+	nos = append(nos, vals...) //=> nos = append(nos, 70, 80, 90)
 	fmt.Println(nos)
 
 	values := []int{3, 1, 4, 2, 5}
