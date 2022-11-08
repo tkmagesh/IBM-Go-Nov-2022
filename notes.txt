@@ -192,5 +192,6 @@ Collections
     Slice
         Variable size collection of data of the same type
         A pointer to an array
-        
+
     Map
+        collection of key-value pairs
