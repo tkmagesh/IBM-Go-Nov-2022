@@ -231,3 +231,24 @@ Modularity
     To create a build of a module
         go build .
         go build -o <binary_name> .
+
+    To install the 3rd party Modules
+        go get <module_name>
+        go get github.com/fatih/color
+
+    To sync the package details in go.mod file
+        go mod tidy
+
+    To download the depedencies in the go.mod file to the module cache
+        go mod download
+
+    To localize the depedencies
+        go mod vendor
+
+    Other use go mod commands
+        go mod graph
+        go mod why github.com/mattn/go-colorable
+        go mod verify
+
+    Reference:
+        https://go.dev/ref/mod
