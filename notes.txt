@@ -220,7 +220,7 @@ Modularity
             ADVISABE to have the complete repo path as the module name
 
         minimum go version
-        3rd party depedencies
+        3rd party dependencies
 
     To create a module
         go mod init <module_name>
@@ -239,10 +239,10 @@ Modularity
     To sync the package details in go.mod file
         go mod tidy
 
-    To download the depedencies in the go.mod file to the module cache
+    To download the dependencies in the go.mod file to the module cache
         go mod download
 
-    To localize the depedencies
+    To localize the dependencies
         go mod vendor
 
     Other use go mod commands
@@ -252,3 +252,7 @@ Modularity
 
     Reference:
         https://go.dev/ref/mod
+
+
+yamlv2 "gopkg.in/yaml.v2"
+
