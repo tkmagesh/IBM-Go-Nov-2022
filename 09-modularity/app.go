@@ -22,6 +22,7 @@ func main() {
 	//fmt.Println("Is 21 even number ? :", utils.IsEven(21))
 	fmt.Println("Is 21 even number ? :", appUtils.IsEven(21))
 	var emp = models.Employee{Id: 100, Name: "Magesh"}
-	models.PrintEmployee(emp)
+	//models.PrintEmployee(emp)
+	emp.PrintEmployee()
 
 }

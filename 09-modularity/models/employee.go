@@ -8,6 +8,6 @@ type Employee struct {
 	salary float32
 }
 
-func PrintEmployee(emp Employee) {
+func (emp Employee) PrintEmployee() {
 	fmt.Printf("Id = %d, Name = %q, Salary = %v\n", emp.Id, emp.Name, emp.salary)
 }
