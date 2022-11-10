@@ -10,23 +10,29 @@ import (
 )
 
 func main() {
-	ch := genFib()
+	stopCh := make(chan struct{})
+	ch := genFib(stopCh)
+	go func() {
+		fmt.Println("Hit ENTER to stop.....")
+		fmt.Scanln()
+		//stopCh <- struct{}{}
+		close(stopCh)
+	}()
+
 	for fibNo := range ch {
 		fmt.Println(fibNo)
 	}
 	fmt.Println("Done")
 }
 
-func genFib() <-chan int {
+func genFib(stopCh <-chan struct{}) <-chan int {
 	ch := make(chan int)
-	//timeoutCh := timeout(5 * time.Second)
-	timeoutCh := time.After(5 * time.Second)
 	go func() {
 		x, y := 1, 1
 	LOOP:
 		for {
 			select {
-			case <-timeoutCh:
+			case <-stopCh:
 				break LOOP
 			case ch <- x:
 				time.Sleep(500 * time.Millisecond)
