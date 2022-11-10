@@ -278,5 +278,23 @@ Concurrency
     To create a build with race detector (DONOT create production build with race detector)
         go build --race 06.demo.go 
 
+
+    Channels
+        - data type to enable communication between goroutines
+        - are typed
+        - Send and Receive data using channel operator ( <- )
+        - Usage:
+            var ch chan int
+            ch = make(chan int)
+            ch <- 100 (SEND OPERATION)
+            <- ch (RECEIVE OPERATION)
+        - Behavior
+            * A RECEIVE operation is ALWAYS a blocking operation
+                in other words, a RECEIVE operation can be successful ONLY if a SEND operation is already initiated
+                
+            * A SEND operation is blocked until a receive operation is initiated (conditions apply)
+                in other words, a SEND operation can be successful ONLY if a RECEIVE operation is already initiated
+
+
 yamlv2 "gopkg.in/yaml.v2"
 
