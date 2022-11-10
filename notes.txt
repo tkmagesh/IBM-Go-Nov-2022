@@ -243,7 +243,7 @@ Modularity
         go mod download
 
     To localize the dependencies
-        go mod vendor
+        go mod vendor adfdf
 
     Other use go mod commands
         go mod graph
@@ -253,6 +253,24 @@ Modularity
     Reference:
         https://go.dev/ref/mod
 
+
+Concurrency
+    What is concurrency?
+        Ability to have more than one execution path 
+        NOTE: these execution paths may/may not be executed at the same time
+        Concurrency is NOT parallelism
+            But Concurrency is needed for parallelism
+
+        Traditionaly, concurrency is achieved using OS threads
+            OS Threads are costly (2MB RAM in linux)
+            Creation and destruction of threads are costly (thats why we use thread pools)
+            Thread context switches are costly
+
+    Cooperative Multitasking
+    Preemptive Multitasking
+
+    DO NOT assume the following:
+        Time taken for a goroutine to complete
 
 yamlv2 "gopkg.in/yaml.v2"
 
