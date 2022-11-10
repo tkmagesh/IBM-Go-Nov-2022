@@ -272,5 +272,11 @@ Concurrency
     DO NOT assume the following:
         Time taken for a goroutine to complete
 
+    To detect data race
+        go run --race 06-demo.go
+
+    To create a build with race detector (DONOT create production build with race detector)
+        go build --race 06.demo.go 
+
 yamlv2 "gopkg.in/yaml.v2"
 
